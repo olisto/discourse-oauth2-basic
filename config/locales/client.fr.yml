@@ -1,7 +1,6 @@
-fr:
+de:
   js:
     login:
       oauth2_basic:
         name: "Olisto"
-      button:
-        with: "avec"
+        title: "avec Olisto"

@@ -199,9 +199,7 @@ if respond_to?(:register_svg_icon)
   register_svg_icon "olisto-white"
 end
 
-auth_provider title: I18n.t("js.login.button.with") + " Olisto",
-              authenticator: OAuth2BasicAuthenticator.new,
-              message: "Olisto",
+auth_provider authenticator: OAuth2BasicAuthenticator.new,
               full_screen_login_setting: "oauth2_full_screen_login",
               icon: 'olisto-white'
 
