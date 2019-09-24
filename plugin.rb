@@ -196,7 +196,7 @@ class OAuth2BasicAuthenticator < Auth::ManagedAuthenticator
 end
 
 if respond_to?(:register_svg_icon)
-  register_svg_icon "olisto"
+  register_svg_icon "olisto-white"
 end
 
 auth_provider title: I18n.t("button.with") " Olisto",
