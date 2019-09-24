@@ -8,8 +8,6 @@
 ur:
   login:
     authenticator_error_fetch_user_details: "آپ کی صارف تفصیلات کو حاصل نہیں کیا جا سکا۔ کیا آپ کے پاس ایک فعال اکاؤنٹ ہے؟"
-  button:
-    with: "کے ساتھ"
   site_settings:
     oauth2_enabled: "اپنی مرضی کا OAuth2 فعال ہے"
     oauth2_client_id: 'اپنی مرضی کے OAuth2 کیلئے کلائنٹ ائی ڈی'

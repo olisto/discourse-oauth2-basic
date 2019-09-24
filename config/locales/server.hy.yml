@@ -6,8 +6,6 @@
 # https://www.transifex.com/projects/p/discourse-org/
 
 hy:
-  button:
-    with: "հետ"
   site_settings:
     oauth2_enabled: "Մասնավոր OAuth2 -ը միացված է"
     oauth2_client_id: 'Հաճախորդի ID մասնավոր OAuth2 -ի համար'
@@ -29,5 +27,4 @@ hy:
     oauth2_debug_auth: "Ներառել կարգաբերման հարուստ տեղեկատվություն Ձեր գրառումներում"
     oauth2_authorize_options: "Նույնականացման ժամանակ պահանջել այս տարբերակները"
     oauth2_scope: "Նույնականացման ժամանակ պահանջել այս սահմանը"
-    oauth2_button_title: "OAuth2 կոճակի տեքստ"
     oauth2_full_screen_login: "Մուտքի համար օգտագործել բրաուզերի հիմնական պատուհան փոփ-ափի փոխարեն"

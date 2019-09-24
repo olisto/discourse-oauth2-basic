@@ -6,8 +6,6 @@
 # https://www.transifex.com/projects/p/discourse-org/
 
 it:
-  button:
-    with: "con"
   site_settings:
     oauth2_enabled: "OAuth2 personalizzato abilitato"
     oauth2_client_id: 'Client ID per OAuth2 personalizzato'

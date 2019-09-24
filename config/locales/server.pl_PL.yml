@@ -6,8 +6,6 @@
 # https://www.transifex.com/projects/p/discourse-org/
 
 pl_PL:
-  button:
-    with: "z"
   site_settings:
     oauth2_enabled: "Niestandardowy OAuth2 jest włączony"
     oauth2_client_id: 'Client ID dla własnego OAuth2'
@@ -30,5 +28,4 @@ pl_PL:
     oauth2_debug_auth: "Umieść bogate informacje debugowania w swoich logach"
     oauth2_authorize_options: "Przy autoryzacji wymagaj tych opcji"
     oauth2_scope: "Przy autoryzacji wymagaj tego zakresu"
-    oauth2_button_title: "Tekst dla przycisku OAuth2"
     oauth2_full_screen_login: "Użyj głównego okna przeglądarki zamiast wyskakującego okienka logowania"

@@ -8,8 +8,6 @@
 he:
   login:
     authenticator_error_fetch_user_details: "לא ניתן לקבל את פרטי המשתמש שלך. יש לך חשבון פעיל?"
-  button:
-    with: "עם"
   site_settings:
     oauth2_enabled: "מופעל OAuth2 בהתאמה אישית"
     oauth2_client_id: 'מזהה לקוח ל־OAuth2 בהתאמה אישית'
@@ -36,7 +34,6 @@ he:
     oauth2_debug_auth: "לכלול פירוט עשיר לטובת ניפוי שגיאות ביומנים שלך"
     oauth2_authorize_options: "בעת בקשת אימות האפשרויות האלו"
     oauth2_scope: "בעת בקשת אימות תחום זה"
-    oauth2_button_title: "הטקסט לכפתור ה־OAuth2"
     oauth2_full_screen_login: "שימוש בחלון הדפדפן הראשי במקום בחלון קופץ לטובת כניסה"
     errors:
       oauth2_fetch_user_details: "oauth2_callback_user_id_path חייב להיות נוכח לטובת נטרול של oauth2_fetch_user_details"

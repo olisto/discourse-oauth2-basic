@@ -6,8 +6,6 @@
 # https://www.transifex.com/projects/p/discourse-org/
 
 fr:
-  button:
-    with: "avec"
   site_settings:
     oauth2_enabled: "OAuth2 personnalisé est activé"
     oauth2_client_id: 'Client ID pour OAuth2 personnalisé'
@@ -30,5 +28,4 @@ fr:
     oauth2_debug_auth: "Inclure des informations de debug étendues dans vos logs"
     oauth2_authorize_options: "Lors de l'authorisation demander ces options"
     oauth2_scope: "Lors de l'authorisation demander ce champ d'application (scope)"
-    oauth2_button_title: "Le texte pour le bouton OAuth2"
     oauth2_full_screen_login: "Utiliser fenêtre de navigation principale au lieu d'un popup pour la connexion"
