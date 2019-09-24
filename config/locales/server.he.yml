@@ -8,6 +8,8 @@
 he:
   login:
     authenticator_error_fetch_user_details: "לא ניתן לקבל את פרטי המשתמש שלך. יש לך חשבון פעיל?"
+  button:
+    with: "עם"
   site_settings:
     oauth2_enabled: "מופעל OAuth2 בהתאמה אישית"
     oauth2_client_id: 'מזהה לקוח ל־OAuth2 בהתאמה אישית'
@@ -22,7 +24,9 @@ he:
     oauth2_user_json_url_method: 'שיטה שמשמשת לקבלת כתובת ה־JSON של המשתמש'
     oauth2_json_user_id_path: 'נתיב מזהה המשתמש ב־JSON של ה־OAuth2 של המשתמש. למשל: user.username'
     oauth2_json_username_path: 'נתיב שם המשתמש ב־JSON של ה־OAuth2 של המשתמש. למשל: user.username'
-    oauth2_json_name_path: "נתיב השם המלא של המשתמש ב־JSON של ה־OAuth2 של המשתמש. למשל: user.name.full"
+    oauth2_json_full_name_path: "נתיב השם המלא של המשתמש ב־JSON של ה־OAuth2 של המשתמש. למשל: user.name.full"
+    oauth2_json_first_name_path: "נתיב השם הפרטי של המשתמש ב OAuth2 JSON של המשתמש. לדוגמה: user.name.first"
+    oauth2_json_last_name_path: "נתיב שם המשתמש של המשתמש ב- OAuth2 JSON של המשתמש. לדוגמה: user.name.last"
     oauth2_json_email_path: "נתיב כתובת הדוא״ל של המשתמש ב־JSON של ה־OAuth2 של המשתמש. למשל: user.email.primary"
     oauth2_json_email_verified_path: "נתיב למצב אימות כתובת הדוא״ל של המשתמש ב־JSON של ה־OAuth2 של המשתמש. למשל: user.email.verified"
     oauth2_json_avatar_path: "נתיב כתובת התמונה הייצוגית של המשתמש ב־JSON של ה־OAuth2 של המשתמש. למשל: user.avatar_url"

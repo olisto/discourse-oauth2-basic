@@ -86,9 +86,9 @@ response from SoundCloud:
 }
 ```
 
-The `oauth2_json_user_id_path`, `oauth2_json_username_path`, `oauth2_json_name_path` and
+The `oauth2_json_user_id_path`, `oauth2_json_username_path`, `oauth2_json_full_name_path` and
 `oauth2_json_email_path` variables should be set to point to the appropriate attributes
-in the JSON.
+in the JSON. (Instead of `full name`, `first_name` and/or `last_name` may be used)
 
 The only mandatory attribute is *id* - we need that so when the user logs on in the future
 that we can pull up the correct account. The others are great if available -- they will
@@ -99,7 +99,7 @@ Here's how I configured the JSON path settings:
 ```
   oauth2_json_user_id_path: 'id'
   oauth2_json_username_path: 'permalink'
-  oauth2_json_name_path: 'full_name'
+  oauth2_json_full_name_path: 'full_name'
 ```
 
 I used `permalink` because it seems more similar to what Discourse expects for a username
@@ -139,7 +139,7 @@ To test this plugin in your local dev environment you can use Google OAuth 2.0 S
   "oauth2_token_url": "https://www.googleapis.com/oauth2/v3/token",
   "oauth2_user_json_url": "https://www.googleapis.com/userinfo/v2/me",
   "oauth2_json_user_id_path": "id",
-  "oauth2_json_user_name_path": "name",
+  "oauth2_json_user_full_name_path": "name",
   "oauth2_json_user_email_path": "email",
   "oauth2_json_user_avatar_path": "picture",
   "oauth2_email_verified": true,

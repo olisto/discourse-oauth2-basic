@@ -137,7 +137,9 @@ class OAuth2BasicAuthenticator < Auth::ManagedAuthenticator
       if user_json.present?
         json_walk(result, user_json, :user_id)
         json_walk(result, user_json, :username)
-        json_walk(result, user_json, :name)
+        json_walk(result, user_json, :full_name)
+        json_walk(result, user_json, :first_name)
+        json_walk(result, user_json, :last_name)
         json_walk(result, user_json, :email)
         json_walk(result, user_json, :email_verified)
         json_walk(result, user_json, :avatar)
@@ -165,7 +167,16 @@ class OAuth2BasicAuthenticator < Auth::ManagedAuthenticator
         auth['uid'] = fetched_user_details[:user_id] if fetched_user_details[:user_id]
         auth['info']['nickname'] = fetched_user_details[:username] if fetched_user_details[:username]
         auth['info']['image'] = fetched_user_details[:avatar] if fetched_user_details[:avatar]
-        ['name', 'email', 'email_verified'].each do |property|
+        if fetched_user_details[:full_name]
+          auth['info']['name'] = fetched_user_details[:full_name]
+        else
+          firstname = fetched_user_details[:first_name] if fetched_user_details[:first_name]
+          lastname = fetched_user_details[:last_name] if fetched_user_details[:last_name]
+          if firstname || lastname
+            auth['info']['name'] = [firstname, lastname].reject(&:empty?).join(' ')
+          end
+        end
+        ['email', 'email_verified'].each do |property|
           auth['info'][property] = fetched_user_details[property.to_sym] if fetched_user_details[property.to_sym]
         end
       else
@@ -184,15 +195,20 @@ class OAuth2BasicAuthenticator < Auth::ManagedAuthenticator
   end
 end
 
-auth_provider title_setting: "oauth2_button_title",
+if respond_to?(:register_svg_icon)
+  register_svg_icon "olisto"
+end
+
+auth_provider title: I18n.t("button.with") " Olisto",
               authenticator: OAuth2BasicAuthenticator.new,
-              message: "OAuth2",
+              message: "Olisto",
               full_screen_login_setting: "oauth2_full_screen_login"
+              icon: 'olisto-white'
 
 register_css <<CSS
 
   button.btn-social.oauth2_basic {
-    background-color: #6d6d6d;
+    background-color: #554df2;
   }
 
 CSS

@@ -28,7 +28,9 @@ login:
       - POST
   oauth2_json_user_id_path: ''
   oauth2_json_username_path: ''
-  oauth2_json_name_path: ''
+  oauth2_json_full_name_path: ''
+  oauth2_json_first_name_path: ''
+  oauth2_json_last_name_path: ''
   oauth2_json_email_path: ''
   oauth2_json_email_verified_path: ''
   oauth2_json_avatar_path: ''
@@ -40,9 +42,6 @@ login:
     default: 'scope'
     type: list
   oauth2_scope: ''
-  oauth2_button_title:
-    default: 'with OAuth2'
-    client: true
   oauth2_full_screen_login:
     default: false
     client: true
