@@ -18,6 +18,8 @@ de:
     oauth2_json_user_id_path: 'Pfad im OAuth2-Benutzer-JSON zur Benutzer-ID. Beispiel: user.id'
     oauth2_json_username_path: 'Pfad im OAuth2-Benutzer-JSON zum Benutzername. Beispiel: user.username'
     oauth2_json_name_path: "Pfad im OAuth2-Benutzer-JSON zum vollständigen Namen des Benutzers. Beispiel: user.name.full"
+    oauth2_json_name_path: "Pfad im OAuth2-Benutzer-JSON zum Vorname des Benutzers. Beispiel: user.name.first"
+    oauth2_json_name_path: "Pfad im OAuth2-Benutzer-JSON zum Nachname des Benutzers. Beispiel: user.name.last"
     oauth2_json_email_path: "Pfad im OAuth2-Benutzer-JSON zur E-Mail-Adresse des Benutzers. Beispiel: user.email.primary"
     oauth2_json_avatar_path: "Pfad im OAuth2-Benutzer-JSON zum Benutzer-Profilbild. Beispiel: user.avatar_url"
     oauth2_email_verified: "Prüfe, ob die OAuth2-Seite die E-Mail-Adresse verifiziert hat"
