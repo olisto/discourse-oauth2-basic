@@ -36,7 +36,7 @@ ca:
     oauth2_debug_auth: "Inclou informació de depuració enriquida en els registres"
     oauth2_authorize_options: "En autoritzar sol·licita aquestes opcions"
     oauth2_scope: "En autoritzar sol·licita aquest abast"
-    oauth2_button_with: "Text del botó OAuth2"
+    oauth2_button_title: "Text del botó OAuth2"
     oauth2_full_screen_login: "Utilitza la finestra del navegador principal en comptes d’una finestra emergent per a iniciar la sessió"
     errors:
       oauth2_fetch_user_details: "oauth2_callback_user_id_p_path ha de ser present per a inhabilitar oauth2_fetch_user_details"
