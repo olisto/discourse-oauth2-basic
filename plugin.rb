@@ -202,7 +202,7 @@ end
 auth_provider title: I18n.t("button.with") + " Olisto",
               authenticator: OAuth2BasicAuthenticator.new,
               message: "Olisto",
-              full_screen_login_setting: "oauth2_full_screen_login"
+              full_screen_login_setting: "oauth2_full_screen_login",
               icon: 'olisto-white'
 
 register_css <<CSS
